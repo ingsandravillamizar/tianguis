@@ -6,5 +6,23 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tianguis';
+  //variables
+  public title = 'tianguis';
+  nombre = "De Sandra";
+
+  constructor(){
+   this.nombre = "De milena";
+   this.soyUnaFuncion();
+  }
+
+  //metodos
+  public soyUnaFuncion(){
+    this.nombre = "Villamizar"
+  }
 }
+
+// primero se ejecutan las variables
+// luego los metodos
+// de ultimo el constructor
+
+
