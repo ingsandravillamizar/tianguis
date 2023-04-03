@@ -8,10 +8,11 @@ import { Component, OnInit } from '@angular/core';
 export class BindingsComponent implements OnInit {
 
   ejemploInterpolacion = "Hola soy un ejemplo de interpolacion"
-  botonDesactivado = false;
+  botonDesactivado = true;
   placaOculta = true;
   imgUrl = 'https://img.freepik.com/foto-gratis/guacamaya-roja-busca-semillas-nido-paja_493961-1283.jpg?w=2000';
   twoProducto = "";
+  corchetes = "{{2+2}} = ";
 
   constructor() { }
 
