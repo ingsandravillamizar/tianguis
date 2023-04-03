@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { environment } from '../environments/environment';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,6 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   //variables
+  envi = environment.leccion;
+
   public title = 'tianguis';
   nombre = "De Sandra";
 
@@ -14,7 +16,7 @@ export class AppComponent {
   btnCalculadora:boolean = false;
   btnBindings:boolean = false;
   btnComponents:boolean = false;
-
+  btnCiclosdevida:boolean = false;
   constructor(){
    this.nombre = "De milena";
    this.soyUnaFuncion();
@@ -33,6 +35,7 @@ export class AppComponent {
         this.btnCalculadora = false;
         this.btnBindings = false;
         this.btnComponents = false;
+        this.btnCiclosdevida= false;
 
          break;
       }
@@ -41,6 +44,7 @@ export class AppComponent {
         this.btnCalculadora = true;
         this.btnBindings = false;
         this.btnComponents = false;
+        this.btnCiclosdevida= false;
          break;
       }
 
@@ -49,6 +53,7 @@ export class AppComponent {
         this.btnCalculadora = false;
         this.btnBindings = true;
         this.btnComponents = false;
+        this.btnCiclosdevida= false;
          break;
       }
 
@@ -57,14 +62,23 @@ export class AppComponent {
         this.btnCalculadora = false;
         this.btnBindings = false;
         this.btnComponents = true;
+        this.btnCiclosdevida= false;
          break;
       }
-
+      case opcion = 6: {
+        this.btnDirectivas = false;
+        this.btnCalculadora = false;
+        this.btnBindings = false;
+        this.btnComponents = false;
+        this.btnCiclosdevida= true;
+         break;
+      }
       case opcion = 0: {
         this.btnDirectivas = false;
         this.btnCalculadora = false;
         this.btnBindings = false;
         this.btnComponents = false;
+        this.btnCiclosdevida= false;
          break;
       }
 

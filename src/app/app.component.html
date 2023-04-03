@@ -4,7 +4,7 @@
   <button type="button" (click) = "opciones(0)"class="btn btn-primary">Primary</button>
   <button type="button" (click) = "opciones(0)"class="btn btn-secondary">Secondary</button>
   <button type="button" (click) = "opciones(0)"class="btn btn-success">Success</button>
-  <button type="button" (click) = "opciones(0)"class="btn btn-danger">Danger</button>
+  <button type="button" (click) = "opciones(6)"class="btn btn-danger">Ciclos de Vida</button>
   <button type="button" (click) = "opciones(7)"class="btn btn-warning">Components</button>
   <button type="button" (click) = "opciones(8)"class="btn btn-info">Bindings</button>
   <button type="button" (click) = "opciones(9)" class="btn btn-light">Calculadora</button>
@@ -17,9 +17,7 @@
 
 
 <h1>{{title}} {{nombre}}</h1>
-
-
-<h1>aqui voy</h1>
+<h1>{{envi}}</h1>
 
 
 <div class="container container-clase">
@@ -27,7 +25,7 @@
    <!-- <app-componentes></app-componentes>
 
    <app-ciclos-de-vida></app-ciclos-de-vida>*ngIf="btndirectivas" -->
-
+   <app-ciclos-de-vida *ngIf="btnCiclosdevida"></app-ciclos-de-vida>
    <app-componentes *ngIf="btnComponents"></app-componentes>
    <app-bindings    *ngIf="btnBindings"></app-bindings>
    <app-calculadora *ngIf="btnCalculadora" ></app-calculadora>
